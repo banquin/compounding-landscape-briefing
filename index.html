@@ -131,6 +131,19 @@
   .compare li .k{font-family:var(--mono); font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); flex:0 0 92px; padding-top:2px}
   @media(max-width:680px){.compare{grid-template-columns:1fr}}
 
+  /* ---------- projections ---------- */
+  .proj-wrap{margin-top:18px; border:1px solid var(--line-strong); border-radius:12px; padding:18px 20px; background:var(--paper-2)}
+  .proj-lab{font-family:var(--mono); font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:12px}
+  .proj-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  .proj-stat .big{font-family:var(--mono); color:#f3ede1; font-size:1.55rem; line-height:1}
+  .proj-stat .big small{font-size:.8rem; color:var(--ink-soft)}
+  .proj-stat .cagr{display:inline-block; font-family:var(--mono); font-size:.68rem; letter-spacing:.04em; padding:2px 8px; border-radius:999px; margin:8px 0; color:#f3ede1}
+  .proj-stat.a .cagr{background:var(--green)} .proj-stat.b .cagr{background:var(--copper)}
+  .proj-stat .lab{font-size:.82rem; color:var(--ink-soft); margin:4px 0 2px}
+  .proj-stat p{font-size:.9rem; margin:6px 0 0}
+  .proj-note{margin-top:14px; font-size:.8rem; color:var(--ink-soft)}
+  @media(max-width:680px){.proj-grid{grid-template-columns:1fr}}
+
   /* ---------- quadrant ---------- */
   .quad-wrap{border:1px solid var(--line-strong); border-radius:12px; padding:18px; background:var(--paper-2)}
   .quadrant{position:relative; width:100%; aspect-ratio:1.5/1; border:1px solid var(--line); border-radius:8px; background:
@@ -429,6 +442,8 @@
           <li><span class="k">Regulator</span><span>State boards of pharmacy; follows USP &lt;795&gt;/&lt;797&gt;/&lt;800&gt;.</span></li>
           <li><span class="k">Scale</span><span>No large batches; cannot mass-produce or sell for "office use."</span></li>
           <li><span class="k">Standard</span><span>Not required to follow full cGMP.</span></li>
+          <li><span class="k">Revenue</span><span>~$5–7B/yr (est.) — the bulk of industry dollars, spread thinly across ~7,500 pharmacies.</span></li>
+          <li><span class="k">Growth</span><span>~5–7% CAGR in the underlying base; the 2022–24 GLP-1 surge added a temporary $1–2B that's now unwinding.</span></li>
         </ul>
       </div>
       <div class="col b">
@@ -439,8 +454,29 @@
           <li><span class="k">Regulator</span><span>FDA, federally; must register and undergo FDA inspection.</span></li>
           <li><span class="k">Scale</span><span>Sells to hospitals/clinics for office use; the fastest-growing slice by revenue.</span></li>
           <li><span class="k">Standard</span><span>Full cGMP — the same manufacturing standard as big pharma.</span></li>
+          <li><span class="k">Revenue</span><span>~$2–4B/yr (est.) across ~80–100 facilities — smaller in total dollars, but far higher revenue per site.</span></li>
+          <li><span class="k">Growth</span><span>~11–14% CAGR — the fastest-growing slice, pulled by hospital office-use demand and outsourcing of sterile production.</span></li>
         </ul>
       </div>
+    </div>
+
+    <div class="proj-wrap">
+      <div class="proj-lab">Revenue &amp; growth outlook · blended analyst estimates, U.S. market</div>
+      <div class="proj-grid">
+        <div class="proj-stat a">
+          <div class="big">~$5–7B<small> / yr</small></div>
+          <span class="cagr">~5–7% CAGR → 2030</span>
+          <div class="lab">503A traditional — base revenue</div>
+          <p>Mature and fragmented. The GLP-1 boom temporarily inflated compounded-script revenue by an estimated $1–2B (2022–24); most of that reverses in 2025–26 as shortages clear and "essentially a copy" enforcement tightens. Underlying growth tracks demographics and the next waves (peptides, hormones) — real, but increasingly captured by vertically integrated telehealth.</p>
+        </div>
+        <div class="proj-stat b">
+          <div class="big">~$2–4B<small> / yr</small></div>
+          <span class="cagr">~11–14% CAGR → 2030</span>
+          <div class="lab">503B outsourcing — base revenue</div>
+          <p>The growth engine. Hospitals keep outsourcing sterile, office-use production to fewer, larger cGMP facilities, and consolidation concentrates volume. Revenue per facility dwarfs the typical 503A, so a small number of sites drive an outsized share of new dollars — but it's a capital-intensive, inspection-heavy game with high barriers to entry.</p>
+        </div>
+      </div>
+      <div class="proj-note">Ranges are directional, not audited totals: public estimates vary widely given the partly state-regulated, highly fragmented 503A base. The strategic read for PK: industry dollars are growing fastest in the 503B/outsourcing tier and in telehealth-owned capacity — <b>not</b> in the independent 503A segment PK primarily serves.</div>
     </div>
   </div>
 </section>
