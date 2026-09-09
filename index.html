@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Compounding Pharmacy Landscape — A Field Briefing</title>
-<meta name="description" content="An educational briefing on the pharmaceutical compounding industry: the value chain, market size, key players, regulation, and demand dynamics — with a position read on PCCA and PK Software." />
+<meta name="description" content="An educational briefing on the pharmaceutical compounding industry: the value chain, market size, key players, regulation, and demand dynamics — with a position read on PCCA and PK Software. Updated September 2026." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -135,7 +135,8 @@
   .proj-wrap{margin-top:18px; border:1px solid var(--line-strong); border-radius:12px; padding:18px 20px; background:var(--paper-2)}
   .proj-lab{font-family:var(--mono); font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:12px}
   .proj-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-  .proj-stat .big{font-family:var(--mono); color:#f3ede1; font-size:1.55rem; line-height:1}
+  .proj-stat .big{font-family:var(--mono); color:var(--green); font-size:1.55rem; line-height:1}
+  .proj-stat.b .big{color:var(--copper)}
   .proj-stat .big small{font-size:.8rem; color:var(--ink-soft)}
   .proj-stat .cagr{display:inline-block; font-family:var(--mono); font-size:.68rem; letter-spacing:.04em; padding:2px 8px; border-radius:999px; margin:8px 0; color:#f3ede1}
   .proj-stat.a .cagr{background:var(--green)} .proj-stat.b .cagr{background:var(--copper)}
@@ -202,6 +203,20 @@
   .result .big{font-family:var(--disp); font-size:3.4rem; font-weight:900; color:#f3ede1}
   .result .rmsg{color:#d8d0bd; max-width:46ch; margin:8px auto 22px}
 
+  /* ---------- update strip ---------- */
+  .updates{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
+  .upd{background:var(--paper-2); border:1px solid var(--line); border-left:3px solid var(--copper); border-radius:10px; padding:14px 16px}
+  .upd .when{font-family:var(--mono); font-size:.62rem; letter-spacing:.16em; text-transform:uppercase; color:var(--copper)}
+  .upd .what{font-family:var(--disp); font-weight:600; font-size:1.02rem; margin:4px 0 4px; line-height:1.2}
+  .upd .why{font-size:.86rem; color:var(--ink-soft); line-height:1.45}
+  .chain .stage.pcca,.chain .stage.pccafam{padding-bottom:32px}
+  .chain .stage.pccafam{background:linear-gradient(180deg, rgba(180,98,47,.09), rgba(180,98,47,.02))}
+  .chain .stage.pccafam::after{content:"PCCA family · Wilcrest 503B"; position:absolute; bottom:8px; left:16px; font-family:var(--mono); font-size:.56rem; letter-spacing:.14em; text-transform:uppercase; color:var(--copper)}
+  .watch{margin-top:18px; border:1px solid var(--line-strong); border-radius:12px; padding:18px 20px; background:var(--paper-2)}
+  .watch ul{margin:8px 0 0; padding-left:18px}
+  .watch li{font-size:.92rem; margin:7px 0}
+  .watch li b{font-family:var(--mono); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--copper); font-weight:600; margin-right:6px; white-space:nowrap}
+
   /* ---------- footer ---------- */
   footer{padding:50px 0 70px}
   footer .src{font-size:.82rem; color:var(--ink-soft); max-width:80ch}
@@ -220,6 +235,7 @@
       <span>Field Briefing — <b>Compounding Pharmacy</b></span>
     </div>
     <nav class="toc">
+      <a href="#update">What's new</a>
       <a href="#chain">Value Chain</a>
       <a href="#pcca">PCCA</a>
       <a href="#market">Market</a>
@@ -234,7 +250,7 @@
 <header class="hero">
   <div class="grid-deco"></div>
   <div class="wrap">
-    <span class="tag reveal eyebrow" style="animation-delay:.05s">Independent-pharmacy intelligence · v1</span>
+    <span class="tag reveal eyebrow" style="animation-delay:.05s">Independent-pharmacy intelligence · v2 · Sept 2026</span>
     <h1 class="reveal" style="animation-delay:.12s">The Compounding Pharmacy <em>Landscape</em></h1>
     <p class="lede reveal" style="animation-delay:.22s">A plain-English briefing on who makes what in pharmaceutical compounding — the value chain end to end, how big the market is, the companies that matter, the rules that shape it, and where the demand is heading. With a position read on <b>PCCA</b> and its software arm, <b>PK</b>.</p>
     <div class="meta reveal" style="animation-delay:.32s">
@@ -242,11 +258,34 @@
       <span>Lens · <b>Independent (503A)</b></span>
       <span>Format · <b>Read + self-test</b></span>
       <span>Figures · <b>Public estimates</b></span>
+      <span>Reviewed · <b>9 Sept 2026</b></span>
     </div>
   </div>
 </header>
 
 <main>
+
+<!-- 00 WHAT'S NEW -->
+<section class="block" id="update">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">00</span><h2>What changed since the first edition</h2></div>
+    <p class="sec-intro">This edition was reviewed on <b>9 September 2026</b>. The short version: the GLP-1 door has all but closed for mass compounding, the telehealth giants have switched to branded drugs, peptides are the new frontier, and PCCA has quietly reorganized under a holding company that now includes a 503B facility. Details, with dates, below — each is also woven into the sections that follow.</p>
+    <div class="updates">
+      <div class="upd"><div class="when">Sept 2025 → June 2026</div><div class="what">The FDA's warning-letter campaign</div><div class="why">"Thousands" of letters over misleading compounded-GLP-1 ads since September 2025, including 30 to telehealth firms on March 3, 2026 and 25 more in June. Claims like "same active ingredient as Ozempic" are now named as violations.</div></div>
+      <div class="upd"><div class="when">Nov 2025</div><div class="what">Brand prices collapse; HRT warnings lifted</div><div class="why">Nov 6: White House deals put Wegovy and Zepbound at ~$350/month cash (the Wegovy pill at $149) via TrumpRx, live Feb 5, 2026. Nov 10: the FDA moved to remove boxed warnings from menopausal hormone therapy.</div></div>
+      <div class="upd"><div class="when">Dec 2025 · Apr 2026</div><div class="what">Oral GLP-1s approved</div><div class="why">Novo's Wegovy pill (Dec 22, 2025) and Lilly's Foundayo/orforglipron (Apr 1, 2026) — approved, once-daily pills at cash prices that erode the case for compounded copies.</div></div>
+      <div class="upd"><div class="when">Feb–Mar 2026</div><div class="what">Telehealth pivots to branded</div><div class="why">Hims' $49 compounded semaglutide pill lasted two days: an FDA vow to choke off GLP-1 ingredients and an HHS referral to the DOJ followed. By March 9 Hims had a deal to sell Novo's Wegovy/Ozempic and stopped advertising compounded GLP-1s; Ro exited them; LifeMD never offered them.</div></div>
+      <div class="upd"><div class="when">Feb 2026</div><div class="what">RedSail buys PrimeRx</div><div class="why">Closed Feb 5, 2026. RedSail (PioneerRx, QS/1, BestRx) now reaches ~16,000 pharmacies — the general-pharmacy software pond beside PK keeps consolidating.</div></div>
+      <div class="upd"><div class="when">Feb · Jul 2026</div><div class="what">Fagron: record 2025, GLP-1 hangover in 2026</div><div class="why">FY2025 revenue €952M (+9.2%), 12 acquisitions. H1 2026 revenue +16% reported but only +3.1% organic — North American compounding services hit by "normalization of GLP-1 related revenues."</div></div>
+      <div class="upd"><div class="when">Apr–Jul 2026</div><div class="what">Peptides move toward legal compounding</div><div class="why">Apr 22: the FDA removed 12 peptides from Category 2. Jul 23–24: its advisory committee backed six of seven (BPC-157, TB-500, KPV, MOTS-c, Epitalon, Semax) for the 503A bulks list — non-binding; rulemaking still to come.</div></div>
+      <div class="upd"><div class="when">Apr 30 · Aug 27, 2026</div><div class="what">Mass GLP-1 compounding: the last doors</div><div class="why">The FDA proposed excluding semaglutide, tirzepatide, and liraglutide from the 503B bulks list (comments closed Jul 30; decision pending). The Fifth Circuit then upheld the FDA's shortage-resolution decisions against the 503B trade group.</div></div>
+      <div class="upd"><div class="when">2025–26</div><div class="what">PCCA reorganizes and re-tools</div><div class="why">Gus Bassani, PharmD, became U.S. CEO (Apr 2025). PCCA now sits under Precision Health Holdings with Eagle, the Wilcrest Pharma 503B facility, and consumer incubator Curive. New ExoBlue base (May 2026); TJM Labs AI-automation partnership (June 2026). Long-time CEO L. David Sparks died May 9, 2026.</div></div>
+      <div class="upd"><div class="when">May–Jun 2026</div><div class="what">Medisca: new APIs, founder returns</div><div class="why">A dsm-firmenich partnership (May 12) brings pharmaceutical-grade vitamin APIs to U.S. compounders; founder Antonio Dos Santos took over as CEO in June. Roughly 420 employees.</div></div>
+      <div class="upd"><div class="when">2025–26 data</div><div class="what">APC's new industry snapshot</div><div class="why">~7,500 compounding pharmacies; 30–40 million compounded prescriptions a year; the median 503A fills 350 compounded scripts a week for 150 prescribers; hormone therapy is 36% of what's dispensed.</div></div>
+      <div class="upd"><div class="when">Aug 2026</div><div class="what">Hims after compounding</div><div class="why">Q2 2026 revenue $753M (+38%), ~2.9M subscribers, full-year guide raised to $3.1–3.3B — but gross margin fell to 64% from 76% as compounded GLP-1s gave way to branded. Its vertical integration (a 503B and a peptide plant) is being repointed at peptides.</div></div>
+    </div>
+  </div>
+</section>
 
 <!-- 01 VALUE CHAIN -->
 <section class="block" id="chain">
@@ -268,18 +307,18 @@
         <span class="chip">PCCA</span><span class="chip">Fagron</span><span class="chip">Medisca</span>
         <span class="flowdot"></span>
       </div>
-      <div class="stage">
+      <div class="stage pccafam">
         <div class="st-k">Production</div>
         <div class="st-t">Compounding pharmacies</div>
         <div class="st-d">Turn raw ingredients into finished, patient-specific medications. Split by regulation into 503A and 503B (see §05).</div>
-        <span class="chip">503A indies</span><span class="chip">503B facilities</span>
+        <span class="chip">503A indies</span><span class="chip">503B facilities</span><span class="chip">Wilcrest Pharma (503B)</span>
         <span class="flowdot"></span>
       </div>
       <div class="stage">
         <div class="st-k">Access</div>
         <div class="st-t">Prescribers &amp; channels</div>
-        <div class="st-d">Physicians, clinics, and increasingly telehealth/DTC platforms that route demand to pharmacies — or own them.</div>
-        <span class="chip">Hims &amp; Hers</span><span class="chip">Ro</span><span class="chip">Clinics</span>
+        <div class="st-d">Physicians, clinics, and telehealth/DTC platforms that route demand to pharmacies — or own them. In 2026 the big platforms pivoted to branded GLP-1s.</div>
+        <span class="chip">Hims &amp; Hers</span><span class="chip">Ro</span><span class="chip">LifeMD</span><span class="chip">Clinics</span>
         <span class="flowdot"></span>
       </div>
       <div class="stage">
@@ -290,11 +329,11 @@
     </div>
 
     <div class="crosscut">
-      <div class="band"><b>Cross-cutting · Software</b> — practice-management systems that run the pharmacy (PK, PioneerRx, PrimeRx…). This is where PK lives.</div>
-      <div class="band"><b>Cross-cutting · Quality</b> — testing labs &amp; accreditation (PCCA's Eagle Analytical lab; PCAB accreditation) that verify potency, sterility, and stability.</div>
+      <div class="band"><b>Cross-cutting · Software</b> — practice-management systems that run the pharmacy (PK; RedSail's PioneerRx and, since 2026, PrimeRx…), plus a new AI-automation layer on top (TJM Labs became PCCA's automation partner in June 2026). This is where PK lives.</div>
+      <div class="band"><b>Cross-cutting · Quality</b> — testing labs &amp; accreditation (PCCA's Eagle Analytical lab; ACHC/PCAB accreditation, plus an APC–CCE option since January 2026) that verify potency, sterility, and stability.</div>
     </div>
 
-    <p class="pullquote">PCCA's footprint spans two layers most rivals don't: it supplies the ingredients <em>and</em> owns a piece of the software and testing that surround the pharmacy.</p>
+    <p class="pullquote">PCCA's footprint now spans three layers most rivals don't: it supplies the ingredients, owns a piece of the software and testing that surround the pharmacy, <em>and</em> — through sister company Wilcrest Pharma — has a foot in 503B production.</p>
   </div>
 </section>
 
@@ -302,30 +341,30 @@
 <section class="block" id="pcca">
   <div class="wrap">
     <div class="sec-head"><span class="sec-num">02</span><h2>Where PCCA sits — and its business lines</h2></div>
-    <p class="sec-intro">PCCA (Professional Compounding Centers of America) is a membership organization for compounding pharmacies: members get ingredients, proprietary formulations, equipment, accredited education, and support. Founded in 1981, headquartered in Houston, it operates across the U.S., Canada, Australia, and the U.K., and is one of the three leading ingredient suppliers to independent compounders. It is privately held; its internal revenue split is <b>not publicly disclosed</b>, so the size labels below are directional, not exact.</p>
+    <p class="sec-intro">PCCA (Professional Compounding Centers of America) is a membership organization for compounding pharmacies: members get ingredients, proprietary formulations, equipment, accredited education, and support. Founded in 1981, headquartered in Houston, it operates across the U.S., Canada, Australia, and the U.K., and is one of the three leading ingredient suppliers to independent compounders. <b>Since 2025 it has been reorganized:</b> Gus Bassani, PharmD — with PCCA since 2002, previously chief scientific officer — became CEO of the U.S. business on April 1, 2025, and PCCA now sits under a parent holding company, <b>Precision Health Holdings</b> (CEO Jim Smith), alongside Eagle Analytical, the Wilcrest Pharma 503B facility, and consumer incubator Curive Healthcare. Long-time president and CEO L. David Sparks, who had become the parent's chairman, died on May 9, 2026. PCCA is privately held; its internal revenue split is <b>not publicly disclosed</b>, so the size labels below are directional, not exact.</p>
 
     <div class="stats" style="margin-bottom:26px">
       <div class="stat"><div class="n">1981</div><div class="l">Founded · Houston, TX</div></div>
       <div class="stat"><div class="n">~500</div><div class="l">Employees (enterprise)</div></div>
       <div class="stat"><div class="n">4</div><div class="l">Countries of operation</div></div>
-      <div class="stat"><div class="n">3,500+</div><div class="l">Member pharmacies (reported)</div></div>
+      <div class="stat"><div class="n">3,000+</div><div class="l">Member pharmacies (reported, Nov 2025)</div></div>
     </div>
 
     <div class="cards">
       <div class="card">
         <span class="sizebadge sb-core">Core engine</span>
         <h3>Chemicals &amp; APIs</h3>
-        <p class="scope">The heart of the business: sourcing, testing, and selling bulk active ingredients and excipients to member pharmacies. This — together with education — is where the company makes most of its money.</p>
+        <p class="scope">The heart of the business: sourcing, testing, and selling bulk active ingredients and excipients to member pharmacies. This — together with education — is where the company makes most of its money. 2026 watch items: the FDA has vowed to restrict GLP-1 ingredients destined for unapproved compounded drugs, and peptide APIs are the next product wave.</p>
       </div>
       <div class="card">
         <span class="sizebadge sb-core">Core engine</span>
         <h3>Education &amp; clinical support</h3>
-        <p class="scope">The PCCA Institute: training, webinars, symposiums, 24/7 clinical/formulation help, and a proprietary formula database. A moat that keeps members dependent and loyal.</p>
+        <p class="scope">The PCCA Institute: training, webinars, symposiums, 24/7 clinical/formulation help, and a proprietary formula database. A moat that keeps members dependent and loyal. Newest program: <b>Compounding PATH for Technicians</b>, launched with NCPA and PTCB in November 2025 ($2,495 per technician; two 2026 cohorts).</p>
       </div>
       <div class="card">
         <span class="sizebadge sb-major">Major line</span>
         <h3>Proprietary bases &amp; formulations</h3>
-        <p class="scope">Higher-margin, exclusive delivery technologies — e.g., <b>SubMagna™ SL HMW</b>, a sublingual base designed to deliver high-molecular-weight drugs like semaglutide. Moves the company up the value chain from commodity chemicals to differentiated IP.</p>
+        <p class="scope">Higher-margin, exclusive delivery technologies — e.g., <b>SubMagna™ SL HMW</b>, a sublingual base for high-molecular-weight drugs like semaglutide, and <b>ExoBlue™</b> (May 2026), a cosmetic topical base aimed at personalized skincare. Moves the company up the value chain from commodity chemicals to differentiated IP — and, with ExoBlue, sideways into non-GLP-1 categories.</p>
       </div>
       <div class="card">
         <span class="sizebadge sb-major">Major line</span>
@@ -335,16 +374,26 @@
       <div class="card">
         <span class="sizebadge sb-adj">Adjacent</span>
         <h3>Eagle Analytical (testing lab)</h3>
-        <p class="scope">An FDA-registered analytical lab providing potency, sterility, and stability testing plus beyond-use dating — selling quality assurance into the same customer base.</p>
+        <p class="scope">An FDA-registered, ISO 17025-accredited analytical lab providing potency, sterility, and stability testing plus beyond-use dating — selling quality assurance into the same customer base. In June 2026 it partnered with accreditor ACHC, and it has flagged expansion into Canada, Florida, Arizona, and Australia.</p>
       </div>
       <div class="card">
         <span class="sizebadge sb-emer">Smaller / strategic</span>
         <h3>PK Software</h3>
-        <p class="scope">Pharmacy practice-management software (The Compounder Rx), acquired in 2010 and historically the most widely used dedicated compounding system. A comparatively small line relative to chemicals — and the one being modernized to SaaS.</p>
+        <p class="scope">Pharmacy practice-management software (The Compounder Rx), acquired in 2010 and historically the most widely used dedicated compounding system. A comparatively small line relative to chemicals. As of September 2026 no cloud relaunch has been announced publicly; PCCA's visible software move was instead an AI-automation partnership with <b>TJM Labs</b> (June 2026), layered on top of whatever system members already run.</p>
+      </div>
+      <div class="card">
+        <span class="sizebadge sb-emer">Sister company · 503B</span>
+        <h3>Wilcrest Pharma</h3>
+        <p class="scope">A Houston-based, FDA-registered 503B outsourcing facility in the Precision Health Holdings family, focused on hazardous and oncology sterile and non-sterile medications for health systems (CEO A.J. Day, PharmD). Won a Premier, Inc. group-purchasing agreement effective April 1, 2026. This is PCCA's family stepping from supplying pharmacies into producing for hospitals.</p>
+      </div>
+      <div class="card">
+        <span class="sizebadge sb-emer">Sister company · DTC</span>
+        <h3>Curive Healthcare</h3>
+        <p class="scope">A consumer-products incubator that uses PCCA's formulation expertise to build direct-to-consumer brands — first out is Plum, an intimate-skincare line. Small today, but it signals ambition to reach consumers without a pharmacy in between.</p>
       </div>
     </div>
 
-    <p class="pullquote">The strategic logic: own the proprietary chemicals, the formulas, the testing, <em>and</em> the software the pharmacy runs on — so the software becomes a distribution and lock-in layer for high-margin ingredients, not a standalone product.</p>
+    <p class="pullquote">The strategic logic: own the proprietary chemicals, the formulas, the testing, <em>and</em> the software the pharmacy runs on — so the software becomes a distribution and lock-in layer for high-margin ingredients, not a standalone product. The 2025 holding-company structure adds two hedges against a squeezed independent channel: a 503B facility that sells to hospitals, and a consumer-brand incubator.</p>
   </div>
 </section>
 
@@ -352,39 +401,41 @@
 <section class="block" id="market">
   <div class="wrap">
     <div class="sec-head"><span class="sec-num">03</span><h2>How big, and growing or shrinking?</h2></div>
-    <p class="sec-intro">Growing — steadily, not explosively. The U.S. compounding market is roughly <b>$6–7&nbsp;billion</b> and expanding at about <b>6–7% a year</b> by most third-party estimates (figures vary by source and definition). The catch: the last two years were inflated by a one-time GLP-1 tailwind that has now largely closed (see §06).</p>
+    <p class="sec-intro">Growing — steadily, not explosively. Third-party estimates put the U.S. compounding market at roughly <b>$6–7.5&nbsp;billion in 2026</b>, expanding at about <b>6–7% a year</b> toward $11.5–12.8 billion by 2035 (figures vary by source and definition; one broad-scope estimate runs above $20 billion). The catch: 2023–25 were inflated by a one-time GLP-1 tailwind that has now closed — and by mid-2026 the unwind was visible in supplier numbers, with Fagron citing "normalization of GLP-1 related revenues" in its North American compounding business (see §06).</p>
 
     <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:26px; align-items:center">
       <div class="quad-wrap">
         <div class="mono" style="color:var(--ink-soft); margin-bottom:8px">U.S. compounding market — est. value ($B)</div>
-        <svg viewBox="0 0 460 230" width="100%" role="img" aria-label="Market growth area chart from about 6.6 billion to about 12 billion">
+        <svg viewBox="0 0 460 230" width="100%" role="img" aria-label="Market growth area chart from about 6.5 billion in 2025 to about 12.8 billion in 2035">
           <defs><linearGradient id="ar" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2f5d4d" stop-opacity=".5"/><stop offset="1" stop-color="#2f5d4d" stop-opacity="0"/></linearGradient></defs>
-          <!-- gridlines -->
+          <!-- gridlines: 6, 8, 10, 12, 14 -->
           <g stroke="rgba(29,26,21,.12)" stroke-width="1">
-            <line x1="40" y1="30" x2="445" y2="30"/><line x1="40" y1="80" x2="445" y2="80"/>
-            <line x1="40" y1="130" x2="445" y2="130"/><line x1="40" y1="180" x2="445" y2="180"/>
+            <line x1="40" y1="30" x2="445" y2="30"/><line x1="40" y1="70" x2="445" y2="70"/>
+            <line x1="40" y1="110" x2="445" y2="110"/><line x1="40" y1="150" x2="445" y2="150"/><line x1="40" y1="190" x2="445" y2="190"/>
           </g>
           <g font-family="IBM Plex Mono" font-size="9" fill="#433d33">
-            <text x="8" y="34">12</text><text x="8" y="84">10</text><text x="8" y="134">8</text><text x="14" y="184">6</text>
+            <text x="8" y="34">14</text><text x="8" y="74">12</text><text x="8" y="114">10</text><text x="14" y="154">8</text><text x="14" y="194">6</text>
           </g>
-          <!-- area: x from 2024..2035 mapped 40..445 ; y 6.6->~12 -->
-          <path d="M40,168 L120,160 L200,152 L280,128 L360,96 L445,52 L445,200 L40,200 Z" fill="url(#ar)"/>
-          <path d="M40,168 L120,160 L200,152 L280,128 L360,96 L445,52" fill="none" stroke="#1f3d34" stroke-width="2.4"/>
-          <g fill="#b4622f"><circle cx="40" cy="168" r="3.5"/><circle cx="200" cy="152" r="3.5"/><circle cx="445" cy="52" r="3.5"/></g>
+          <!-- area: x from 2025..2035 mapped 40..445 ; y = 190 - (value - 6) * 20 -->
+          <path d="M40,180 L80,162 L162,138 L243,112 L324,84 L445,54 L445,200 L40,200 Z" fill="url(#ar)"/>
+          <path d="M40,180 L80,162 L162,138 L243,112 L324,84 L445,54" fill="none" stroke="#1f3d34" stroke-width="2.4"/>
+          <g fill="#b4622f"><circle cx="40" cy="180" r="3.5"/><circle cx="80" cy="162" r="3.5"/><circle cx="445" cy="54" r="3.5"/></g>
           <g font-family="IBM Plex Mono" font-size="9" fill="#433d33">
-            <text x="30" y="218">2024</text><text x="180" y="218">2026</text><text x="408" y="218">2035e</text>
+            <text x="30" y="218">2025</text><text x="222" y="218">2030</text><text x="408" y="218">2035e</text>
           </g>
         </svg>
-        <div class="mono" style="color:var(--ink-soft); margin-top:6px; text-transform:none; letter-spacing:.02em">≈ 6.2% CAGR · projections from third-party market research</div>
+        <div class="mono" style="color:var(--ink-soft); margin-top:6px; text-transform:none; letter-spacing:.02em">≈ 6–7% CAGR · 2025 ≈ $6.5B → 2026 ≈ $7.4B → 2035 ≈ $11.5–12.8B (Precedence Research; Towards Healthcare)</div>
       </div>
       <div>
         <div class="stats" style="grid-template-columns:1fr 1fr">
-          <div class="stat"><div class="n">$6–7B</div><div class="l">U.S. market, 2025–26 (est.)</div></div>
+          <div class="stat"><div class="n">$6–7.5B</div><div class="l">U.S. market, 2026 (est.)</div></div>
           <div class="stat"><div class="n">~6–7%</div><div class="l">Annual growth (CAGR)</div></div>
           <div class="stat"><div class="n">~56k</div><div class="l">U.S. community pharmacies</div></div>
           <div class="stat"><div class="n">~7,500</div><div class="l">Offer dedicated compounding</div></div>
+          <div class="stat"><div class="n">30–40M</div><div class="l">Compounded Rx per year (APC)</div></div>
+          <div class="stat"><div class="n">36%</div><div class="l">Share of compounded therapies that are HRT</div></div>
         </div>
-        <p style="font-size:.92rem; color:var(--ink-soft); margin-top:16px">Demand drivers: chronic disease and an aging population, persistent drug shortages, and rising appetite for personalized medicine (custom doses, allergen-free forms, hormones, dermatology, pediatrics, veterinary).</p>
+        <p style="font-size:.92rem; color:var(--ink-soft); margin-top:16px">Demand drivers: chronic disease and an aging population, persistent drug shortages, and rising appetite for personalized medicine (custom doses, allergen-free forms, hormones, dermatology, pediatrics, veterinary). Per the APC 2025–26 Snapshot, the median 503A pharmacy fills about 350 compounded prescriptions a week, works with ~150 prescribers, and keeps ~100 formulations in rotation.</p>
       </div>
     </div>
   </div>
@@ -397,17 +448,17 @@
     <p class="sec-intro">Two different competitive maps matter: the <b>ingredient-supplier</b> layer where PCCA competes, and the <b>pharmacy-software</b> layer where PK competes. PCCA is a leader in the first; PK is a niche specialist in the second.</p>
 
     <h3 style="font-size:1.25rem; margin:6px 0 4px">Ingredient suppliers — Fagron is the giant</h3>
-    <p style="font-size:.94rem; color:var(--ink-soft); max-width:64ch; margin:0 0 16px">Fagron is publicly traded and global, dwarfing the others on total revenue. PCCA and Medisca are the other two majors but are privately held, so exact revenue isn't public — they're shown indicatively. Letco (Fagron-owned) is included as a scale reference.</p>
+    <p style="font-size:.94rem; color:var(--ink-soft); max-width:64ch; margin:0 0 16px">Fagron is publicly traded and global, dwarfing the others on total revenue: <b>€952M in FY2025</b> (+9.2%, twelve acquisitions in the year) and €552M in H1 2026 (+16% reported, but only +3.1% organic as U.S. GLP-1 compounding revenue normalized). It keeps buying in the U.S. — a California health-and-wellness 503A (UCP, September 2025) — and runs three 503B sterile sites with a Premier GPO contract since July 2025. PCCA and Medisca are the other two majors but are privately held, so exact revenue isn't public — they're shown indicatively. Letco (Fagron-owned) is included as a scale reference.</p>
     <div class="barset">
-      <div class="bar-row"><div class="lab">Fagron<small>Global · public ~$1.07B</small></div><div class="track"><div class="fill g" data-w="100%">~$1.07B</div></div></div>
+      <div class="bar-row"><div class="lab">Fagron<small>Global · public · FY2025 €952M (≈$1.0–1.1B)</small></div><div class="track"><div class="fill g" data-w="100%">€952M (FY2025)</div></div></div>
       <div class="bar-row"><div class="lab">PCCA<small>U.S. leader · private</small></div><div class="track"><div class="fill s" data-w="42%">private — undisclosed</div></div></div>
-      <div class="bar-row"><div class="lab">Medisca<small>Global · private</small></div><div class="track"><div class="fill s" data-w="40%">private — undisclosed</div></div></div>
+      <div class="bar-row"><div class="lab">Medisca<small>Global · private · ~420 staff</small></div><div class="track"><div class="fill s" data-w="40%">private — undisclosed</div></div></div>
       <div class="bar-row"><div class="lab">Letco (Fagron)<small>U.S. · ~$40M at acquisition</small></div><div class="track"><div class="fill c" data-w="8%">~$40M</div></div></div>
     </div>
-    <p style="font-size:.82rem; color:var(--ink-soft); margin-top:12px">Hatched bars = privately held, revenue not disclosed; widths are illustrative placeholders, not measured figures. The "big three" suppliers to U.S. compounders are commonly cited as Fagron, Medisca, and PCCA.</p>
+    <p style="font-size:.82rem; color:var(--ink-soft); margin-top:12px">Hatched bars = privately held, revenue not disclosed; widths are illustrative placeholders, not measured figures. The "big three" suppliers to U.S. compounders are commonly cited as Fagron, Medisca, and PCCA. Medisca's founder Antonio Dos Santos returned as CEO in June 2026, a month after a dsm-firmenich partnership that adds pharmaceutical-grade vitamin APIs for U.S. compounders.</p>
 
     <h3 style="font-size:1.25rem; margin:34px 0 4px">Pharmacy software — PK is a niche specialist</h3>
-    <p style="font-size:.94rem; color:var(--ink-soft); max-width:66ch; margin:0 0 16px">The broad independent-pharmacy software market is led by <b>RedSail Technologies</b> (PioneerRx, QS/1, BestRx), which serves 10M+ patients monthly. PK is historically the most-used <em>dedicated compounding</em> system, but it's a small fish in the larger pond and is legacy/on-prem while cloud-native challengers (e.g., LifeFile) rise. The map below is positioning, not market share.</p>
+    <p style="font-size:.94rem; color:var(--ink-soft); max-width:66ch; margin:0 0 16px">The broad independent-pharmacy software market is led by <b>RedSail Technologies</b> (PioneerRx, QS/1, BestRx — and, since February 5, 2026, <b>PrimeRx</b>), a network of roughly 16,000 pharmacies. PK is historically the most-used <em>dedicated compounding</em> system, but it's a small fish in the larger pond and is legacy/on-prem while cloud-native challengers (e.g., LifeFile) rise — and a new AI-automation layer (TJM Labs, PCCA's official partner since June 2026; 400+ pharmacies, 300k scripts a day) is being bolted on top of systems rather than replacing them. The map below is positioning, not market share.</p>
     <div class="quad-wrap">
       <div class="quadrant">
         <div class="axis axv"></div><div class="axis axh"></div>
@@ -418,12 +469,12 @@
 
         <div class="dot pk" style="left:30%; top:74%"><i></i><span>PK / The Compounder</span></div>
         <div class="dot gn" style="left:64%; top:24%"><i></i><span>PioneerRx (RedSail)</span></div>
-        <div class="dot gn" style="left:52%; top:40%"><i></i><span>PrimeRx</span></div>
+        <div class="dot gn" style="left:52%; top:40%"><i></i><span>PrimeRx (RedSail, 2026)</span></div>
         <div class="dot sg" style="left:38%; top:54%"><i></i><span>Liberty / Computer-Rx</span></div>
         <div class="dot sg" style="left:74%; top:64%"><i></i><span>LifeFile (cloud compounding)</span></div>
         <div class="dot sg" style="left:80%; top:30%"><i></i><span>QS/1 (RedSail)</span></div>
       </div>
-      <p style="font-size:.8rem; color:var(--ink-soft); margin:12px 4px 0">PK's strength is depth in compounding workflows and install base; its vulnerability is being on older technology while the market moves to the cloud.</p>
+      <p style="font-size:.8rem; color:var(--ink-soft); margin:12px 4px 0">PK's strength is depth in compounding workflows and install base; its vulnerability is being on older technology while the market moves to the cloud. After the PrimeRx deal, three of the six systems on this map share one owner.</p>
     </div>
   </div>
 </section>
@@ -443,21 +494,34 @@
           <li><span class="k">Scale</span><span>No large batches; cannot mass-produce or sell for "office use."</span></li>
           <li><span class="k">Standard</span><span>Not required to follow full cGMP.</span></li>
           <li><span class="k">Revenue</span><span>~$5–7B/yr (est.) — the bulk of industry dollars, spread thinly across ~7,500 pharmacies.</span></li>
-          <li><span class="k">Growth</span><span>~5–7% CAGR in the underlying base; the 2022–24 GLP-1 surge added a temporary $1–2B that's now unwinding.</span></li>
+          <li><span class="k">Growth</span><span>~5–7% CAGR in the underlying base; the 2022–25 GLP-1 surge added a temporary $1–2B that is now unwinding — only narrow, documented, patient-specific GLP-1 compounding remains defensible.</span></li>
         </ul>
       </div>
       <div class="col b">
         <h3>503B — outsourcing</h3>
         <ul>
           <li><span class="k">Makes</span><span>Bulk batches, with or without a patient-specific prescription.</span></li>
-          <li><span class="k">Who</span><span>FDA-registered outsourcing facilities (~80–100 nationally); more industrial.</span></li>
+          <li><span class="k">Who</span><span>FDA-registered outsourcing facilities (93 on the FDA list in mid-2025 — call it 90–100); more industrial.</span></li>
           <li><span class="k">Regulator</span><span>FDA, federally; must register and undergo FDA inspection.</span></li>
           <li><span class="k">Scale</span><span>Sells to hospitals/clinics for office use; the fastest-growing slice by revenue.</span></li>
           <li><span class="k">Standard</span><span>Full cGMP — the same manufacturing standard as big pharma.</span></li>
-          <li><span class="k">Revenue</span><span>~$2–4B/yr (est.) across ~80–100 facilities — smaller in total dollars, but far higher revenue per site.</span></li>
-          <li><span class="k">Growth</span><span>~11–14% CAGR — the fastest-growing slice, pulled by hospital office-use demand and outsourcing of sterile production.</span></li>
+          <li><span class="k">Revenue</span><span>~$2–4B/yr (est.) across ~90–100 facilities — smaller in total dollars, but far higher revenue per site.</span></li>
+          <li><span class="k">Growth</span><span>~11–14% CAGR on the underlying hospital/office-use base — but 2026 is a reset year: the FDA's April 2026 proposal would shut off 503B GLP-1 volume, and several facilities (e.g., ProRx, BPI Labs) have already exited GLP-1 production.</span></li>
         </ul>
       </div>
+    </div>
+
+    <div class="watch">
+      <div class="proj-lab">Regulatory watch · what moved in 2025–26</div>
+      <ul>
+        <li><b>Apr 30, 2026</b> The FDA proposed excluding semaglutide, tirzepatide, and liraglutide from the 503B bulks list — "no clinical need" for outsourcing facilities to compound them. Comments closed July 30; a final decision was pending at this update.</li>
+        <li><b>Aug 27, 2026</b> The Fifth Circuit rejected the Outsourcing Facilities Association's challenge to the FDA's shortage-resolution decisions — the trade group's last legal route to reopen mass GLP-1 compounding.</li>
+        <li><b>Feb 6, 2026</b> The FDA said it would use "all available compliance and enforcement tools," including restricting GLP-1 <em>ingredients</em> headed for unapproved compounded drugs — a supplier-layer lever, not just a pharmacy one. An import alert already limits GLP-1 APIs to a vetted "green list" of foreign makers.</li>
+        <li><b>Mar–Jun 2026</b> Warning-letter waves to telehealth marketers (30 on March 3; 25 more in June) plus an April 1 warning to 503B facilities. Legitimate 503A pharmacies filling patient-specific prescriptions were not the target.</li>
+        <li><b>Apr 22 · Jul 23–24, 2026</b> Peptides: 12 removed from Category 2, then the advisory committee backed six for the 503A bulks list over FDA staff objections. Not yet legal to compound — rulemaking (typically 6–12 months) must follow.</li>
+        <li><b>Nov 10, 2025</b> The FDA began removing boxed warnings from menopausal hormone therapy — a tailwind for the largest compounding category, even though regulators still steer patients toward approved products.</li>
+        <li><b>Jan 26, 2026</b> APC and the Coalition for Compounding Excellence launched a USP-based accreditation option for 503A pharmacies, an alternative to PCAB/ACHC.</li>
+      </ul>
     </div>
 
     <div class="proj-wrap">
@@ -476,7 +540,7 @@
           <p>The growth engine. Hospitals keep outsourcing sterile, office-use production to fewer, larger cGMP facilities, and consolidation concentrates volume. Revenue per facility dwarfs the typical 503A, so a small number of sites drive an outsized share of new dollars — but it's a capital-intensive, inspection-heavy game with high barriers to entry.</p>
         </div>
       </div>
-      <div class="proj-note">Ranges are directional, not audited totals: public estimates vary widely given the partly state-regulated, highly fragmented 503A base. The strategic read for PK: industry dollars are growing fastest in the 503B/outsourcing tier and in telehealth-owned capacity — <b>not</b> in the independent 503A segment PK primarily serves.</div>
+      <div class="proj-note">Ranges are directional, not audited totals: public estimates vary widely given the partly state-regulated, highly fragmented 503A base. The strategic read for PK: industry dollars are growing fastest in the 503B/outsourcing tier and in telehealth-owned capacity — <b>not</b> in the independent 503A segment PK primarily serves. <b>September 2026 read:</b> the 503B tier's near-term growth is being reset by the GLP-1 shutdown, while PCCA's own family has entered that tier through Wilcrest Pharma — a hedge on exactly the segment PK does not serve.</div>
     </div>
   </div>
 </section>
@@ -485,15 +549,19 @@
 <section class="block" id="demand">
   <div class="wrap">
     <div class="sec-head"><span class="sec-num">06</span><h2>Demand dynamics: the GLP-1 wave and what's next</h2></div>
-    <p class="sec-intro">Understanding recent growth means understanding the GLP-1 story — a boom that became a regulatory cliff — and the next waves (peptides, hormones) plus the structural threat of telehealth disintermediation.</p>
+    <p class="sec-intro">Understanding recent growth means understanding the GLP-1 story — a boom that became a regulatory cliff and, in 2026, a closed door — plus the next waves (peptides, hormones) and the structural threat of telehealth disintermediation. Timeline updated through September 2026.</p>
     <div class="timeline">
       <div class="tl-item"><div class="when">2022</div><div class="what">Shortage opens the door</div><div class="why">Semaglutide and tirzepatide land on the FDA shortage list. Shortage status lets compounders legally make low-cost copies — a massive new revenue stream for pharmacies and the telehealth platforms feeding them.</div></div>
-      <div class="tl-item"><div class="when">Oct 2024</div><div class="what">Tirzepatide shortage declared resolved</div><div class="why">The FDA removes tirzepatide from the shortage list, starting the wind-down of legal compounding. Litigation follows but courts decline to block it.</div></div>
-      <div class="tl-item"><div class="when">Feb 2025</div><div class="what">Semaglutide shortage declared resolved</div><div class="why">Same path for semaglutide. Phased enforcement deadlines run through April–May 2025, after which large-scale compounding of "essentially a copy" is no longer permissible for 503A or 503B.</div></div>
-      <div class="tl-item"><div class="when">2025</div><div class="what">The gray-area workaround</div><div class="why">Roughly 80% of compounded GLP-1 scripts begin adding supplemental ingredients (e.g., B-vitamins) to argue they aren't exact copies — legally precarious, and not a durable base.</div></div>
-      <div class="tl-item"><div class="when">2026</div><div class="what">The next waves: peptides &amp; hormones</div><div class="why">Regulators signal a looser stance on peptides (moving many off Category 2), and hormone therapy grows after a 2025 estrogen boxed-warning removal. Real new categories — but increasingly captured by vertically integrated telehealth players (Hims &amp; Hers, Ro, LifeMD) building their own compounding capacity.</div></div>
+      <div class="tl-item"><div class="when">Oct–Dec 2024</div><div class="what">Tirzepatide shortage declared resolved</div><div class="why">The FDA removes tirzepatide from the shortage list in October and, after a trade-group lawsuit, reaffirms the decision in December. Courts decline to block it.</div></div>
+      <div class="tl-item"><div class="when">Feb 2025</div><div class="what">Semaglutide shortage declared resolved</div><div class="why">Same path for semaglutide. Phased enforcement deadlines run through April–May 2025, after which large-scale compounding of "essentially a copy" is no longer permissible for 503A or 503B. Lilly (April) and Novo sue telehealth sellers; Novo's first, short-lived Hims partnership collapses in June.</div></div>
+      <div class="tl-item"><div class="when">2025</div><div class="what">The gray-area workaround — and the ad crackdown</div><div class="why">Roughly 80% of compounded GLP-1 scripts add supplemental ingredients (e.g., B-vitamins) or "personalized" doses to argue they aren't exact copies. From September the FDA starts sending what it later calls "thousands" of letters over misleading compounded-GLP-1 advertising.</div></div>
+      <div class="tl-item"><div class="when">Nov–Dec 2025</div><div class="what">Brands undercut the compounders</div><div class="why">White House deals (Nov 6) price Wegovy and Zepbound at ~$350/month cash and the Wegovy pill at $149 through TrumpRx; the FDA approves that pill on Dec 22 — the first oral GLP-1 for weight loss. Separately (Nov 10), the FDA moves to strip boxed warnings from menopausal hormone therapy.</div></div>
+      <div class="tl-item"><div class="when">Jan–Mar 2026</div><div class="what">The Hims episode and the telehealth pivot</div><div class="why">Novo's CEO estimates up to 1.5 million Americans are on compounded GLP-1s (~$199/month). Hims launches a $49 compounded semaglutide pill on Feb 5; the FDA vows to restrict GLP-1 ingredients for unapproved compounding, HHS refers Hims to the DOJ, and the pill is pulled within two days. On March 9 Novo and Hims settle: Hims sells branded Wegovy/Ozempic and stops advertising compounded GLP-1s. Ro exits compounded GLP-1s; LifeMD never sold them. Thirty FDA warning letters go to telehealth firms on March 3.</div></div>
+      <div class="tl-item"><div class="when">Apr 2026</div><div class="what">Doors close, doors open</div><div class="why">Lilly's Foundayo (orforglipron) pill is approved (Apr 1); a judge lets Lilly's suit against telehealth seller Mochi proceed; the FDA warns 503B facilities (Apr 1), removes 12 peptides from Category 2 (Apr 22), and proposes excluding semaglutide, tirzepatide, and liraglutide from the 503B bulks list (Apr 30).</div></div>
+      <div class="tl-item"><div class="when">Jul–Aug 2026</div><div class="what">Peptides advance; GLP-1 litigation ends</div><div class="why">The FDA's advisory committee votes for six of seven peptides (BPC-157 by 8–6) to join the 503A bulks list — non-binding, rulemaking pending. Fagron says it has 20 peptide products lined up, five launching in H2 2026. Hims' Q2 shows the cost of the pivot (gross margin 64% vs 76%) and a push into peptides. On Aug 27 the Fifth Circuit upholds the FDA's shortage decisions.</div></div>
+      <div class="tl-item"><div class="when">Next</div><div class="what">What to watch</div><div class="why">The FDA's final 503B bulks decision; peptide rulemaking (and which suppliers are ready with validated APIs and bases); whether the 1.5 million compounded-GLP-1 patients migrate to $149–$350 branded options or to "personalized" 503A scripts; and HRT growth after the boxed-warning removal — the one next wave already sized (36% of compounded therapies).</div></div>
     </div>
-    <p class="pullquote">The tide is rising for <em>compounding</em>. It's less clear it's rising for <em>independent</em> compounding — the exact segment PK serves — as telehealth platforms consolidate demand and own more of the pharmacy.</p>
+    <p class="pullquote">The tide is still rising for <em>compounding</em> — but the GLP-1 flood has drained back to the brands, and the telehealth platforms that once fed independents now sell Wegovy and Zepbound directly. The next waves (peptides, hormones) are real, smaller, and contested. For the <em>independent</em> compounding PK serves, 2026 is a reset, not a windfall.</p>
   </div>
 </section>
 
@@ -502,7 +570,7 @@
   <div class="wrap">
     <div id="quiz">
       <div class="sec-head"><span class="sec-num">07</span><h2>Test your understanding</h2></div>
-      <p class="sec-intro">A 52-question bank across seven topics — including a <b>Hard · Inference</b> set that isn't recall: each answer is derivable from the briefing, but you have to reason it out. Pick a focus or take the full run. Each answer comes with a short explanation, and questions shuffle each time.</p>
+      <p class="sec-intro">A 65-question bank across eight topics — including a <b>Hard · Inference</b> set that isn't recall (each answer is derivable from the briefing, but you have to reason it out) and a <b>What's New · 2026</b> set covering the developments added in this edition. Pick a focus or take the full run. Each answer comes with a short explanation, and questions shuffle each time.</p>
 
       <div id="quiz-setup">
         <div class="mono" style="color:#cfc6b3; margin-bottom:8px">Choose a topic</div>
@@ -543,16 +611,43 @@
 <footer class="wrap">
   <h3 style="font-size:1.2rem; margin-bottom:8px">Sources &amp; caveats</h3>
   <p class="src">This briefing synthesizes public market-research summaries, regulatory notices, trade press, and company materials. Market sizes and growth rates are third-party estimates that <b>vary by source and definition</b>; private-company revenues (PCCA, Medisca) and internal business-line splits are <b>not publicly disclosed</b> and are presented qualitatively. Nothing here is investment, legal, or career advice.</p>
-  <div class="disclaimer">Figures to treat as directional, not precise: U.S. market size ($6–7B) and ~6–7% CAGR; PCCA employee count (~500) and member count (3,500+, as reported); supplier revenue comparisons (only Fagron is a public figure). Regulatory dates (GLP-1 shortage resolutions Oct 2024 / Feb 2025) are well documented.</p>
+  <div class="disclaimer">Last reviewed 9 September 2026. Figures to treat as directional, not precise: U.S. market size ($6–7.5B) and ~6–7% CAGR; PCCA employee count (~500) and member count (3,000+, as reported in November 2025); supplier revenue comparisons (only Fagron reports publicly — €952M for FY2025). Regulatory dates (GLP-1 shortage resolutions Oct/Dec 2024 and Feb 2025; the April 30, 2026 503B bulks proposal; the July 23–24, 2026 advisory-committee peptide votes; the August 27, 2026 Fifth Circuit ruling) are documented in the sources below. The FDA's final 503B bulks decision and any peptide rulemaking were still pending at review time.</div>
   <div class="src-list">
+    <a href="https://www.fda.gov/news-events/press-announcements/fda-proposes-exclude-semaglutide-tirzepatide-and-liraglutide-503b-bulks-list">FDA — proposal to exclude GLP-1s from the 503B bulks list (Apr 30, 2026)</a><br/>
     <a href="https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize">FDA — compounder policy on GLP-1 supply</a><br/>
-    <a href="https://www.towardshealthcare.com/insights/us-compounding-pharmacy-market-sizing">Towards Healthcare — U.S. market sizing</a><br/>
-    <a href="https://www.techtarget.com/pharmalifesciences/feature/Understanding-the-differences-between-503A-503B-compounding-pharmacies">TechTarget — 503A vs 503B</a><br/>
-    <a href="https://pitchbook.com/profiles/company/42279-40">PitchBook — Fagron revenue profile</a><br/>
+    <a href="https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026">FDA — Pharmacy Compounding Advisory Committee, July 23–24, 2026</a><br/>
+    <a href="https://www.fda.gov/news-events/press-announcements/hhs-advances-womens-health-removes-misleading-fda-warnings-hormone-replacement-therapy">FDA/HHS — boxed-warning removal, menopausal hormone therapy (Nov 2025)</a><br/>
+    <a href="https://www.fda.gov/drugs/human-drug-compounding/registered-outsourcing-facilities">FDA — registered outsourcing facilities</a><br/>
+    <a href="https://insidehealthpolicy.com/daily-news/fifth-circuit-backs-fda-glp-1-compounding-shortage-fight">Inside Health Policy — Fifth Circuit backs FDA (Aug 27, 2026)</a><br/>
+    <a href="https://www.foley.com/p/102mmr0/glp1-compliance-fda-targets-telehealth-marketing-in-30-new-warning-letters/">Foley — FDA's 30 telehealth warning letters (Mar 3, 2026)</a><br/>
+    <a href="https://www.statnews.com/2026/07/23/fda-panel-okays-peptides-compound-pharmacies-bpc-157-kpv/">STAT — advisory panel backs peptide compounding (Jul 23, 2026)</a><br/>
+    <a href="https://www.biopharmadive.com/news/hims-novo-deal-obesity-drugs-wegovy-ozempic/814160/">BioPharma Dive — Novo–Hims deal (Mar 9, 2026)</a><br/>
+    <a href="https://investors.hims.com/news/news-details/2026/Hims--Hers-Health-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx">Hims &amp; Hers — Q2 2026 results</a><br/>
+    <a href="https://www.investing.com/news/stock-market-news/novo-nordisk-ceo-flags-15-million-us-users-of-compounded-glp1-drugs-4442698">Reuters (via Investing.com) — Novo CEO: 1.5M on compounded GLP-1s (Jan 2026)</a><br/>
+    <a href="https://www.npr.org/sections/shots-health-news/2025/11/06/nx-s1-5599122/wegovy-zepbound-price-deal">NPR — Wegovy/Zepbound price deals (Nov 6, 2025)</a><br/>
+    <a href="https://www.prnewswire.com/news-releases/fda-approves-novo-nordisks-wegovy-pill-the-first-and-only-oral-glp-1-for-weight-loss-in-adults-302648344.html">Novo Nordisk — Wegovy pill approval (Dec 22, 2025)</a><br/>
+    <a href="https://www.aamc.org/news/glp-1-pills-weight-loss-are-here-how-will-they-change-obesity-care">AAMC — GLP-1 pills, incl. Foundayo approval (Apr 2026)</a><br/>
+    <a href="https://www.globenewswire.com/news-release/2026/02/12/3236847/0/en/Fagron-continues-its-outstanding-performance-in-FY-2025-with-9-2-topline-growth-and-10-9-increase-in-REBITDA.html">Fagron — FY2025 results (Feb 12, 2026)</a><br/>
+    <a href="https://investors.fagron.com/press-releases/regulated-information-fagron-delivers-strong-h1-2026-performance-with-16-topline-growth-and-reiterates-fy-2026-guidance/">Fagron — H1 2026 results (Jul 30, 2026)</a><br/>
+    <a href="https://www.redsailtechnologies.com/press-releases/redsail-technologies-acquires-primerx-as-an-affiliate">RedSail — PrimeRx acquisition (Feb 2026)</a><br/>
+    <a href="https://www.prnewswire.com/news-releases/pcca-appoints-gus-bassani-pharmd-as-ceo-302406804.html">PCCA — Gus Bassani appointed CEO (Mar 2025)</a><br/>
+    <a href="https://www.globenewswire.com/news-release/2025/10/10/3164881/0/en/PCCA-Celebrates-Outstanding-Compounding-Pharmacists-and-Technician-at-2025-Awards-Luncheon.html">PCCA / Precision Health Holdings — 2025 awards release (holding-company structure)</a><br/>
+    <a href="https://www.globenewswire.com/news-release/2026/06/23/3316294/0/en/PCCA-Partners-with-TJM-Labs-to-Bring-AI-Automation-to-Compounding-Pharmacies.html">PCCA — TJM Labs AI-automation partnership (Jun 23, 2026)</a><br/>
+    <a href="https://www.globenewswire.com/news-release/2026/05/27/3302334/0/en/pcca-launches-exoblue-a-new-compounding-base-designed-for-the-next-generation-of-personalized-skincare.html">PCCA — ExoBlue launch (May 27, 2026)</a><br/>
+    <a href="https://ncpa.org/newsroom/news-releases/2025/11/20/ncpa-ptcb-and-pcca-launch-compounding-path-technicians">NCPA/PTCB/PCCA — Compounding PATH for Technicians (Nov 2025)</a><br/>
     <a href="https://www.pccarx.com/products/PCCASUBMAGNA%E2%84%A2SLHMW/30-5224/PROPRIETARYBASES">PCCA — SubMagna SL HMW</a><br/>
+    <a href="https://americanpharmacynews.com/stories/682124994-professional-compounding-centers-of-america-announces-celebration-of-life-for-l-david-sparks">American Pharmacy News — L. David Sparks (May 2026)</a><br/>
+    <a href="https://finance.yahoo.com/sectors/healthcare/articles/wilcrest-pharma-awarded-outsourced-compounded-123000706.html">Wilcrest Pharma — Premier agreement (Apr 2026)</a><br/>
+    <a href="https://achc.org/wp-content/uploads/2026/06/Eagle-Analytical-Partnership-Media-Release.pdf">ACHC — Eagle Analytical partnership (Jun 2026)</a><br/>
+    <a href="https://www.businesswire.com/news/home/20260512963697/en/Medisca-and-dsmfirmenich-Partner-to-Expand-Access-to-Pharmaceutical-Grade-Vitamin-APIs-for-U.S.-Compounding-Market">Medisca — dsm-firmenich partnership (May 12, 2026)</a><br/>
+    <a href="https://ca.finance.yahoo.com/news/medisca-enters-next-chapter-under-141900041.html">Medisca — founder Antonio Dos Santos becomes CEO (Jun 2026)</a><br/>
+    <a href="https://a4pc.org/news/apc-releases-the-2025-2026-snapshot-of-pharmacy-compounding-in-america-key-trends-and-insights">Alliance for Pharmacy Compounding — 2025–26 Snapshot</a><br/>
+    <a href="https://natlawreview.com/press-releases/alliance-pharmacy-compounding-and-coalition-compounding-excellence-announce">APC–CCE accreditation partnership (Jan 2026)</a><br/>
+    <a href="https://www.towardshealthcare.com/insights/us-compounding-pharmacy-market-sizing">Towards Healthcare — U.S. market sizing</a><br/>
+    <a href="https://www.precedenceresearch.com/us-compounding-pharmacies-market">Precedence Research — U.S. market sizing</a><br/>
+    <a href="https://www.techtarget.com/pharmalifesciences/feature/Understanding-the-differences-between-503A-503B-compounding-pharmacies">TechTarget — 503A vs 503B</a><br/>
     <a href="https://www.pharmacytimes.com/view/fda-moves-to-permanently-close-the-door-on-compounded-glp-1s">Pharmacy Times — GLP-1 compounding</a><br/>
-    <a href="https://www.pioneerrx.com/pharmacy-software">RedSail / PioneerRx — pharmacy software</a><br/>
-    <a href="https://join.a4pc.org/hubfs/PDFs/APC-Snapshot-23-24-updated-version.pdf">Alliance for Pharmacy Compounding — snapshot</a>
+    <a href="https://www.pioneerrx.com/pharmacy-software">RedSail / PioneerRx — pharmacy software</a>
   </div>
   <p class="mono" style="margin-top:26px; color:var(--ink-soft); text-transform:none; letter-spacing:.02em">A general-knowledge briefing on the compounding industry · built as a static site · MIT-licensed.</p>
 </footer>
@@ -564,7 +659,7 @@ const BANK = [
   {cat:"Value Chain", q:"In the compounding value chain, what does a supplier like PCCA primarily provide?", o:["Finished, patient-ready medications","Bulk ingredients, proprietary bases, equipment, formulas, and education to pharmacies","Health insurance for compounded drugs","Direct-to-consumer telehealth prescriptions"], a:1, e:"PCCA sits upstream. It arms compounding pharmacies with the raw materials, formulas, and know-how — it never dispenses to a patient."},
   {cat:"Value Chain", q:"Where do compounding pharmacies sit in the chain?", o:["Upstream, making raw chemicals","Midstream, turning ingredients into patient-specific medications","Downstream, insuring patients","Outside the chain entirely"], a:1, e:"Pharmacies are the production layer — they convert suppliers' raw ingredients into finished, customized medications."},
   {cat:"Value Chain", q:"Roughly how many U.S. community pharmacies offer dedicated compounding services?", o:["About 500","About 7,500","About 56,000","About 250,000"], a:1, e:"Of ~56,000 U.S. community pharmacies, around 7,500 provide dedicated compounding services."},
-  {cat:"Value Chain", q:"Which downstream players increasingly disrupt the chain by vertically integrating telehealth with compounding?", o:["Hospitals and the VA","Hims & Hers, Ro, and LifeMD","API manufacturers in China","State boards of pharmacy"], a:1, e:"Telehealth/DTC platforms route demand and increasingly own their own compounding capacity, squeezing independents."},
+  {cat:"Value Chain", q:"Which downstream players increasingly disrupt the chain by vertically integrating telehealth with compounding?", o:["Hospitals and the VA","Hims & Hers, Ro, and LifeMD","API manufacturers in China","State boards of pharmacy"], a:1, e:"Telehealth/DTC platforms route demand and own compounding capacity (Hims bought a 503B in 2024 and a peptide plant in 2025) — though by 2026 the big platforms had pivoted to branded GLP-1s, which squeezes independents from a different direction."},
   {cat:"Value Chain", q:"What does a testing lab like PCCA's Eagle Analytical contribute to the chain?", o:["Marketing for pharmacies","Potency, sterility, and stability testing plus beyond-use dating","Bulk API manufacturing","Patient prescriptions"], a:1, e:"Quality/testing is a cross-cutting layer; Eagle sells quality assurance into the same customer base as the chemicals."},
   {cat:"Value Chain", q:"Why is PCCA's position described as spanning more than one layer?", o:["It owns hospitals","It supplies ingredients and also owns software (PK) and a testing lab (Eagle)","It manufactures the brand-name drugs","It only sells software"], a:1, e:"Most rivals only sell ingredients; PCCA also touches the software and testing layers around the pharmacy."},
 
@@ -574,7 +669,7 @@ const BANK = [
   {cat:"Regulation", q:"Which designation must follow full cGMP (the standard used by large drug manufacturers)?", o:["503A","503B","Both equally","Neither"], a:1, e:"Only 503B outsourcing facilities are held to full current Good Manufacturing Practices."},
   {cat:"Regulation", q:"Most independent community compounders fall under which designation?", o:["503A","503B","Both equally","Neither — they're unregulated"], a:0, e:"The large, fragmented base of independents are 503A pharmacies — PCCA's core customers."},
   {cat:"Regulation", q:"The 503A/503B framework was created by the Drug Quality and Security Act (2013) after what event?", o:["The opioid crisis","The 2012 New England Compounding Center meningitis outbreak","The COVID-19 pandemic","The GLP-1 shortage"], a:1, e:"A 2012 contamination tragedy that killed dozens prompted Congress to formalize federal oversight."},
-  {cat:"Regulation", q:"Approximately how many 503B outsourcing facilities operate nationally?", o:["About 10","About 80–100","About 7,500","About 56,000"], a:1, e:"503B facilities are relatively few (roughly 80–100) and more industrial than the thousands of 503A pharmacies."},
+  {cat:"Regulation", q:"Approximately how many 503B outsourcing facilities operate nationally?", o:["About 10","About 90–100","About 7,500","About 56,000"], a:1, e:"The FDA's registered list counted 93 facilities in mid-2025 — a small, industrial tier next to the thousands of 503A pharmacies."},
 
   // ---- Market ----
   {cat:"Market", q:"Roughly how large is the U.S. compounding market in 2025–26 (most estimates)?", o:["About $500 million","About $6–7 billion","About $60 billion","About $600 billion"], a:1, e:"Most third-party estimates put the U.S. market around $6–7 billion, with figures varying by definition."},
@@ -594,30 +689,45 @@ const BANK = [
   {cat:"PCCA", q:"Why is software strategically valuable to an ingredient supplier like PCCA?", o:["It is the company's largest revenue source","It can act as a distribution and lock-in layer for high-margin proprietary chemicals","It replaces the need for chemicals","It is unrelated to the core business"], a:1, e:"If the pharmacy runs on your software, you can route your exclusive formulas and ingredients — and capture transactions — through it."},
 
   // ---- Players / Competitors ----
-  {cat:"Players", q:"The largest global pharmaceutical-compounding supplier, publicly traded with ~$1B+ revenue, is…", o:["PCCA","Fagron","Medisca","Letco"], a:1, e:"Fagron is the publicly traded global leader, far larger by total revenue than the private players."},
+  {cat:"Players", q:"The largest global pharmaceutical-compounding supplier, publicly traded with ~$1B+ revenue, is…", o:["PCCA","Fagron","Medisca","Letco"], a:1, e:"Fagron is the publicly traded global leader — €952M revenue in FY2025 — far larger by total revenue than the private players."},
   {cat:"Players", q:"Fagron expanded in the U.S. by acquiring which ingredient supplier in 2022?", o:["Medisca","Letco Medical","PCCA","Spectrum"], a:1, e:"Fagron acquired Letco Medical (~$40M sales at the time), consolidating the U.S. supply layer."},
   {cat:"Players", q:"The 'big three' ingredient suppliers to U.S. compounders are commonly cited as…", o:["Pfizer, Lilly, Novo","Fagron, Medisca, and PCCA","CVS, Walgreens, Rite Aid","Hims, Ro, LifeMD"], a:1, e:"These three dominate the supply-and-formulation layer; they even co-fund industry research together."},
-  {cat:"Players", q:"The leading independent-pharmacy software company (PioneerRx, QS/1, BestRx) is…", o:["RedSail Technologies","Micro Merchant Systems","Epic","McKesson"], a:0, e:"RedSail Technologies owns PioneerRx, QS/1, and BestRx, serving 10M+ patients monthly — the broad-market leader."},
+  {cat:"Players", q:"The leading independent-pharmacy software company (PioneerRx, QS/1, BestRx — and, since 2026, PrimeRx) is…", o:["RedSail Technologies","Micro Merchant Systems","Epic","McKesson"], a:0, e:"RedSail Technologies owns PioneerRx, QS/1, BestRx and, after a February 2026 acquisition, PrimeRx — a network of roughly 16,000 pharmacies and the broad-market leader."},
   {cat:"Players", q:"How is PK Software best positioned competitively?", o:["The dominant general pharmacy software","A leading dedicated compounding system, but small within the broader pharmacy-software market","A cloud-native startup","A 503B facility"], a:1, e:"PK is a respected niche specialist in compounding, but a small fish relative to the overall pharmacy-software market."},
   {cat:"Players", q:"Which is a cloud-native compounding pharmacy software challenger?", o:["LifeFile","QS/1","The Compounder","RxMaster"], a:0, e:"LifeFile is an example of the cloud-native compounding platforms pressuring legacy, on-prem systems like PK."},
   {cat:"Players", q:"PK Software's flagship product is called…", o:["PioneerRx","The Compounder (Rx)","PrimeRx","ScriptPro"], a:1, e:"PK's flagship is The Compounder Rx, historically the most widely used dedicated compounding system."},
 
   // ---- Demand Dynamics ----
   {cat:"Demand", q:"The 2023–24 compounding boom was largely driven by…", o:["Pediatric vaccines","Compounded GLP-1s (semaglutide/tirzepatide) during the shortage","COVID antivirals","New antibiotics"], a:1, e:"Shortage status let compounders make low-cost GLP-1 copies — a one-time surge in volume."},
-  {cat:"Demand", q:"The FDA declared the tirzepatide shortage resolved in…", o:["October 2024","January 2022","June 2026","It never did"], a:0, e:"Tirzepatide was removed from the shortage list in October 2024, starting the compounding wind-down."},
+  {cat:"Demand", q:"The FDA declared the tirzepatide shortage resolved in…", o:["October 2024","January 2022","June 2026","It never did"], a:0, e:"Tirzepatide was removed from the shortage list in October 2024 (a decision reaffirmed that December after a trade-group lawsuit), starting the compounding wind-down."},
   {cat:"Demand", q:"The FDA declared the semaglutide shortage resolved in…", o:["February 2025","February 2022","December 2026","It never did"], a:0, e:"Semaglutide's shortage was declared resolved in February 2025, with enforcement deadlines following."},
   {cat:"Demand", q:"After the shortages resolved, large-scale compounding of these GLP-1 copies became…", o:["More profitable than ever","No longer legally permissible (with phased 2025 enforcement deadlines)","Mandatory","Tax-free"], a:1, e:"Absent a shortage, making 'essentially a copy' of an approved drug is generally prohibited for both 503A and 503B."},
-  {cat:"Demand", q:"A common (legally gray) workaround compounders used after the GLP-1 cliff was…", o:["Switching to tablets","Adding supplemental ingredients (e.g., B-vitamins) to argue it isn't 'essentially a copy'","Lowering prices to zero","Stopping all compounding"], a:1, e:"Around 80% of compounded GLP-1 scripts added extras to dodge the 'copy' rule — precarious and likely to be curtailed."},
+  {cat:"Demand", q:"A common (legally gray) workaround compounders used after the GLP-1 cliff was…", o:["Switching to tablets","Adding supplemental ingredients (e.g., B-vitamins) to argue it isn't 'essentially a copy'","Lowering prices to zero","Stopping all compounding"], a:1, e:"Around 80% of compounded GLP-1 scripts added extras to dodge the 'copy' rule — precarious, and in 2026 the FDA moved to curtail it, warning that products in the same or similar strength are still copies."},
   {cat:"Demand", q:"The 'next wave' growth categories for compounding after GLP-1 include…", o:["Peptides and hormone therapy","Generic antibiotics","OTC vitamins only","Vaccines"], a:0, e:"Peptides and hormones are the most cited successor categories as the GLP-1 tailwind fades."},
-  {cat:"Demand", q:"In 2026, the FDA signaled a looser stance on peptides by…", o:["Banning all peptides","Moving to remove many peptides from Category 2 (toward Category 1)","Requiring prescriptions for vitamins","Approving every peptide as a drug"], a:1, e:"Reclassifying peptides opens a looser framework that benefits suppliers positioned in that category."},
+  {cat:"Demand", q:"In 2026, the FDA signaled a looser stance on peptides by…", o:["Banning all peptides","Moving to remove many peptides from Category 2 (toward Category 1)","Requiring prescriptions for vitamins","Approving every peptide as a drug"], a:1, e:"HHS signaled the shift in February 2026, the FDA removed 12 peptides from Category 2 on April 22, and its advisory committee backed six for the 503A bulks list in July. Rulemaking still has to finish — but suppliers with validated peptide APIs and bases stand to benefit."},
   {cat:"Demand", q:"The biggest structural threat to independent compounders is…", o:["Too little demand","Telehealth players vertically integrating their own compounding (disintermediation)","Lack of regulation","Falling chronic-disease rates"], a:1, e:"As Hims/Ro/LifeMD own more of the pharmacy and the patient relationship, independents can be hollowed out even as the market grows."},
   {cat:"Demand", q:"Compared with the CRM software market, the compounding-software niche is…", o:["Far more saturated","Less saturated, stickier, with a defensible incumbent","Identical","Unregulated and risk-free"], a:1, e:"It's a less crowded pond with high switching costs (the software runs the pharmacy) and a clear incumbent."},
   {cat:"Demand", q:"A key risk to the 'rising tide' thesis for PK is that…", o:["Compounding is illegal","The independent channel PK serves could be hollowed out by telehealth/large-compounder consolidation even as the overall market grows","There is no demand for compounding","PCCA is shutting down"], a:1, e:"The tide is rising for compounding overall, but not necessarily for the independent segment PK depends on."},
 
+  // ---- What's New · 2026 (added September 2026) ----
+  {cat:"What's New · 2026", q:"In 2025 PCCA was placed under a new parent holding company. What is it called, and which sister companies does it unite?", o:["Precision Health Holdings — PCCA, Eagle Analytical, Wilcrest Pharma, and Curive Healthcare","Fagron Group — PCCA and Letco","RedSail Technologies — PCCA and PK Software","Medisca Holdings — PCCA and Medisca"], a:0, e:"Precision Health Holdings (CEO Jim Smith) unites PCCA, its Eagle testing lab, the Wilcrest Pharma 503B facility, and the consumer-products incubator Curive Healthcare."},
+  {cat:"What's New · 2026", q:"What is Wilcrest Pharma, and why does it matter for PCCA's position in the value chain?", o:["A Houston 503B outsourcing facility — it extends the PCCA family from supplying ingredients into producing sterile, office-use medications for hospitals","A pharmacy software company that replaces PK","A telehealth platform","An API factory in India"], a:0, e:"Wilcrest Pharma is an FDA-registered 503B facility focused on hazardous and oncology medications. It won a Premier group-purchasing agreement effective April 1, 2026 — putting PCCA's family in the most industrial, hospital-facing tier of compounding, the one PK does not serve."},
+  {cat:"What's New · 2026", q:"Who became CEO of PCCA's U.S. business on April 1, 2025?", o:["Gus Bassani, PharmD — previously chief scientific officer","David Sparks","Jim Smith","A.J. Day"], a:0, e:"Bassani, with PCCA since 2002, moved up from chief scientific officer. Long-time leader L. David Sparks became chairman of the parent holding company and died in May 2026."},
+  {cat:"What's New · 2026", q:"In June 2026 PCCA named an 'official automation partner.' Who, and what does it do?", o:["TJM Labs — AI bots for prescription intake, data entry, refills, and prior authorizations","LifeFile — a cloud pharmacy system","RedSail — a pharmacy network","Eagle Analytical — potency testing"], a:0, e:"Rather than a cloud rewrite of PK, PCCA's visible 2026 software move was layering AI workflow automation (TJM Labs, used by 400+ pharmacies) on top of whatever members already run."},
+  {cat:"What's New · 2026", q:"RedSail Technologies' February 2026 acquisition, which grew its network to roughly 16,000 pharmacies, was…", o:["PrimeRx","LifeFile","PK Software","Liberty Software"], a:0, e:"PrimeRx closed on February 5, 2026, joining PioneerRx, QS/1, and BestRx under RedSail — further consolidating the general pharmacy-software pond PK swims beside."},
+  {cat:"What's New · 2026", q:"On April 30, 2026 the FDA proposed to…", o:["Exclude semaglutide, tirzepatide, and liraglutide from the 503B bulks list, finding no clinical need for outsourcing facilities to compound them","Add semaglutide to the 503A bulks list","Re-declare a semaglutide shortage","Approve compounded GLP-1s as generics"], a:0, e:"The proposal would permanently shut mass 503B compounding of GLP-1s. Comments closed July 30, 2026; a final decision was still pending as of this update."},
+  {cat:"What's New · 2026", q:"What did the FDA's Pharmacy Compounding Advisory Committee do on July 23–24, 2026?", o:["Voted to recommend six of seven peptides (including BPC-157, TB-500, and KPV) for the 503A bulks list — a non-binding recommendation","Banned all peptide compounding","Approved BPC-157 as a prescription drug","Added semaglutide to the 503A list"], a:0, e:"The panel backed BPC-157 (8–6), KPV, TB-500, MOTS-c, Epitalon, and Semax over FDA staff objections; only Emideltide fell short (7–6). FDA rulemaking, typically 6–12 months, must follow before pharmacies can legally compound them."},
+  {cat:"What's New · 2026", q:"How did Hims & Hers' $49 compounded semaglutide pill (launched February 5, 2026) end?", o:["Withdrawn within days after an FDA statement and an HHS referral to the DOJ; by March 9 Hims had a deal to sell Novo's branded Wegovy and Ozempic instead","It became Hims' best-selling product","The FDA approved it","Novo Nordisk bought Hims"], a:0, e:"The episode marked the pivot point: Hims stopped advertising compounded GLP-1s, Ro exited them, and LifeMD never offered them — the telehealth giants now route demand to branded drugs."},
+  {cat:"What's New · 2026", q:"What did Fagron report about its North American compounding business in H1 2026?", o:["Revenue was hit by the 'normalization of GLP-1 related revenues' — group organic growth was only 3.1% (about 7% excluding the GLP-1 effect)","Record growth driven by GLP-1s","It exited the U.S. market","Revenue doubled"], a:0, e:"Fagron's FY2025 revenue reached €952M (+9.2%), but H1 2026 showed the GLP-1 unwind landing in supplier numbers — the same pressure PCCA faces privately."},
+  {cat:"What's New · 2026", q:"Two FDA-approved oral GLP-1 pills arrived between December 2025 and April 2026. Which?", o:["Novo's Wegovy pill (Dec 22, 2025) and Lilly's Foundayo/orforglipron (Apr 1, 2026)","Compounded semaglutide tablets","Ozempic gummies and Zepbound drops","Neither — no oral GLP-1 is approved"], a:0, e:"Approved pills plus TrumpRx cash prices (Wegovy pill $149/month, injectables ~$350) shrank the price gap that had driven patients to compounded copies."},
+  {cat:"What's New · 2026", q:"Per the APC 2025–26 Snapshot, what share of compounded therapies is hormone replacement therapy?", o:["About 36% — the single largest category","About 5%","About 80%","Under 1%"], a:0, e:"HRT leads compounding; the FDA's November 2025 removal of boxed warnings from menopausal hormone therapy is a tailwind — though regulators still favor FDA-approved products over compounded bioidenticals."},
+  {cat:"What's New · 2026", q:"On August 27, 2026 the Fifth Circuit ruled on the Outsourcing Facilities Association's challenge to the FDA's GLP-1 shortage decisions. Outcome?", o:["It sided with the FDA, upholding the end of the tirzepatide and semaglutide shortage declarations","It reinstated the shortages","It ordered the FDA to allow compounding","It struck down the 503B framework"], a:0, e:"Every legal route to reopen mass GLP-1 compounding has now failed; what remains is narrow, documented, patient-specific 503A compounding."},
+  {cat:"What's New · 2026", q:"Novo's CEO estimated up to 1.5 million Americans were on compounded GLP-1s in January 2026, typically paying about $199 a month. With the Wegovy pill at $149 and injectables near $350 cash, what does that imply for compounders?", o:["The price advantage that justified compounding has largely collapsed, so most of that base is at risk of migrating to branded drugs","Compounders can raise prices","Demand for compounded GLP-1s will grow","Nothing changes"], a:0, e:"Compounding won on price and convenience. Once brands match on both — and the law forbids copies — the remaining compounded demand shrinks to genuinely patient-specific needs."},
+
   // ---- Hard · Inference (derive it; not stated outright) ----
-  {cat:"Hard · Inference", q:"Using the briefing's figures (~$2–4B across ~80–100 facilities vs. ~$5–7B across ~7,500 pharmacies), revenue per 503B facility is roughly…", o:["About the same as a 503A pharmacy","Roughly 30–50× a typical 503A pharmacy","About 2–3× a 503A pharmacy","Lower than a typical 503A pharmacy"], a:1, e:"≈$33M per 503B site ($3B/90) vs. ≈$0.8M per 503A pharmacy ($6B/7,500) — on the order of 30–50× more revenue per site, even though 503A holds more total dollars."},
+  {cat:"Hard · Inference", q:"Using the briefing's figures (~$2–4B across ~90–100 facilities vs. ~$5–7B across ~7,500 pharmacies), revenue per 503B facility is roughly…", o:["About the same as a 503A pharmacy","Roughly 30–50× a typical 503A pharmacy","About 2–3× a 503A pharmacy","Lower than a typical 503A pharmacy"], a:1, e:"≈$32M per 503B site ($3B/95) vs. ≈$0.8M per 503A pharmacy ($6B/7,500) — on the order of 30–50× more revenue per site, even though 503A holds more total dollars."},
   {cat:"Hard · Inference", q:"If ~7,500 of ~56,000 U.S. community pharmacies compound, the share offering compounding is closest to…", o:["About 1%","About 13%","About 40%","About 75%"], a:1, e:"7,500 / 56,000 ≈ 13% — roughly one in eight community pharmacies. Compounding is a niche within the broader retail-pharmacy base."},
-  {cat:"Hard · Inference", q:"503B is the fastest-growing slice by revenue — yet it's a poor growth target for PK's software. Why?", o:["503B facilities are illegal","There are only ~80–100 of them, and they run industrial cGMP/ERP systems, not patient-specific Rx software","503B facilities can't use any software","PK is legally barred from selling to them"], a:1, e:"PK's addressable market is the ~7,500 patient-specific 503A pharmacies. The handful of industrial 503B sites need manufacturing-grade systems, so 503B's revenue growth doesn't convert into PK seats."},
+  {cat:"Hard · Inference", q:"503B is the fastest-growing slice by revenue — yet it's a poor growth target for PK's software. Why?", o:["503B facilities are illegal","There are only ~90–100 of them, and they run industrial cGMP/ERP systems, not patient-specific Rx software","503B facilities can't use any software","PK is legally barred from selling to them"], a:1, e:"PK's addressable market is the ~7,500 patient-specific 503A pharmacies. The handful of industrial 503B sites need manufacturing-grade systems, so 503B's revenue growth doesn't convert into PK seats."},
   {cat:"Hard · Inference", q:"Given the GLP-1 boom was a one-time, shortage-driven surge now unwinding, the most likely near-term effect on PCCA's ingredient revenue is…", o:["A permanent step-change higher","A tough comparison / pullback as 2022–24 GLP-1 volume rolls off","No effect at all","Elimination of demand for all bases"], a:1, e:"PCCA likely rode the surge (e.g., via bases like SubMagna for semaglutide). As compounded GLP-1 volume becomes impermissible, those sales face declining comps unless the next waves replace them."},
   {cat:"Hard · Inference", q:"If telehealth platforms scale their own compounding, which operation would they most naturally build — and why does it threaten PK's customers?", o:["More 503A patient-specific pharmacies, helping independents","503B-style bulk facilities, concentrating volume away from independent 503A pharmacies","Health-insurance plans","API factories in China"], a:1, e:"Mass DTC demand favors bulk 503B economics. That pulls volume out of the fragmented 503A channel PK depends on — disintermediation even as total compounding grows."},
   {cat:"Hard · Inference", q:"That ~80% of compounded GLP-1 scripts rely on the 'add B-vitamins' workaround most directly implies…", o:["The revenue is durable and safe","A large share of current GLP-1 compounding revenue sits on legally precarious ground","Compounding is now fully FDA-approved","Patients simply prefer added vitamins"], a:1, e:"If regulators close the 'not essentially a copy' loophole, the bulk of remaining compounded-GLP-1 revenue is exposed. It's a fragile base, not a durable one."},
