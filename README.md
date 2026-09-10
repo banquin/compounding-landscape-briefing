@@ -9,7 +9,7 @@ It's a general-knowledge briefing built from public sources — no proprietary o
 ## What's inside
 
 - **`index.html`** — the entire site. HTML, CSS, and JavaScript are inlined into one file, so there is **no build step and no dependencies**. Open it and it works.
-- Infographics (SVG/CSS): value-chain flow, market-growth chart, supplier size comparison, a software positioning quadrant, a 503A-vs-503B comparison, and a demand timeline.
+- Infographics (SVG/CSS): value-chain flow, an ownership map of the Precision Health Holdings family (PHH → PCCA → PK Software), market-growth chart, supplier size comparison, a software positioning quadrant, a 503A-vs-503B comparison, and a demand timeline.
 - A "What changed" strip at the top summarizing, with dates, everything that moved between the first edition and September 2026, plus a regulatory-watch list in the 503A/503B section.
 - A quiz engine with a 65-question bank across eight topics (Value Chain, Regulation, Market, PCCA, Players, Demand, What's New · 2026, Hard · Inference). Questions and answer order shuffle each run.
 

@@ -203,6 +203,31 @@
   .result .big{font-family:var(--disp); font-size:3.4rem; font-weight:900; color:#f3ede1}
   .result .rmsg{color:#d8d0bd; max-width:46ch; margin:8px auto 22px}
 
+  /* ---------- ownership map ---------- */
+  .org-wrap{border:1px solid var(--line-strong); border-radius:12px; padding:18px 18px 12px; background:var(--paper-2); margin-bottom:26px}
+  .org-wrap h3{font-size:1.25rem; margin:0 0 4px}
+  .org-wrap .lead{font-size:.94rem; color:var(--ink-soft); max-width:70ch; margin:0 0 14px}
+  .org{width:100%; height:auto; display:block}
+  .org text{font-family:var(--body); font-size:10.5px; fill:var(--ink)}
+  .org .h{font-family:var(--mono); font-size:9.5px; letter-spacing:.12em; fill:var(--ink-soft)}
+  .org .hb{font-family:var(--mono); font-size:10px; letter-spacing:.09em; fill:var(--ink); font-weight:600}
+  .org .inv, .org .inv-h{fill:#f3ede1}
+  .org .inv-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; font-weight:600}
+  .org .inv-s{fill:#e2d9c6; font-size:10px}
+  .org .cop{fill:var(--copper); font-family:var(--mono); font-size:10px; letter-spacing:.09em; font-weight:600}
+  .org .grn{fill:var(--green); font-family:var(--mono); font-size:10px; letter-spacing:.09em; font-weight:600}
+  .org .sub{fill:var(--ink-soft); font-size:10px}
+  .org .box{fill:var(--paper); stroke:rgba(29,26,21,.30); stroke-width:1}
+  .org .box-phh{fill:var(--green); stroke:var(--green)}
+  .org .box-pcca{fill:rgba(180,98,47,.14); stroke:var(--copper); stroke-width:1.4}
+  .org .box-pk{fill:var(--copper); stroke:var(--copper)}
+  .org .box-nest{fill:var(--paper); stroke:var(--copper); stroke-dasharray:3 3}
+  .org .ln{stroke:rgba(29,26,21,.45); stroke-width:1.2; fill:none}
+  .org .ln-c{stroke:var(--copper); stroke-width:1.2; fill:none}
+  .org-note{font-size:.8rem; color:var(--ink-soft); margin:12px 4px 0}
+  .org-legend{display:flex; gap:16px; flex-wrap:wrap; font-family:var(--mono); font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin:10px 4px 0}
+  .org-legend i{display:inline-block; width:12px; height:12px; border-radius:3px; vertical-align:-2px; margin-right:6px}
+
   /* ---------- update strip ---------- */
   .updates{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
   .upd{background:var(--paper-2); border:1px solid var(--line); border-left:3px solid var(--copper); border-radius:10px; padding:14px 16px}
@@ -348,6 +373,94 @@
       <div class="stat"><div class="n">~500</div><div class="l">Employees (enterprise)</div></div>
       <div class="stat"><div class="n">4</div><div class="l">Countries of operation</div></div>
       <div class="stat"><div class="n">3,000+</div><div class="l">Member pharmacies (reported, Nov 2025)</div></div>
+    </div>
+
+<div class="org-wrap">
+      <h3>Who owns what — the Precision Health Holdings family</h3>
+      <p class="lead">Three tiers. The holding company sits on top; PCCA is one of four operating companies beneath it; PK Software is a subsidiary <em>of PCCA</em>, one level further down. PK owns products, not companies.</p>
+      <svg class="org" viewBox="0 0 1000 660" role="img" aria-label="Ownership map: Precision Health Holdings owns PCCA, Eagle Analytical, Wilcrest Pharma and Curive Healthcare; PCCA owns PK Software, international subsidiaries, Wellness Works and its institute and proprietary bases; PK Software owns The Compounder Rx and The Compounder Lab products.">
+  <rect x="300" y="14" width="400" height="86" rx="7" class="box box-phh"/>
+  <text x="310" y="31" class="inv-h">PRECISION HEALTH HOLDINGS (PHH)</text>
+  <text x="310" y="44" class="inv">Strategic holding company · Houston · private; ownership undisclosed</text>
+  <text x="310" y="57" class="inv-s">CEO Jim Smith · CFO Manfredo Thibau</text>
+  <text x="310" y="70" class="inv-s">Chairman L. David Sparks (died May 2026); board incl. Bryan Sparks</text>
+  <text x="310" y="83" class="inv-s">Shared leadership, capital and strategy for the companies below</text>
+  <path class="ln" d="M500,100 V118 M132,118 H867 M132,118 V140 M377,118 V140 M622,118 V140 M867,118 V140"/>
+  <rect x="20" y="140" width="225" height="92" rx="7" class="box box-pcca"/>
+  <text x="30" y="157" class="cop">PCCA</text>
+  <text x="30" y="170" class="sub">Professional Compounding Centers</text>
+  <text x="30" y="183" class="sub">of America · Houston · est. 1981</text>
+  <text x="30" y="196" class="">CEO Gus Bassani, PharmD (Apr 2025)</text>
+  <text x="30" y="209" class="">Ingredients, bases, gear, education</text>
+  <rect x="265" y="140" width="225" height="92" rx="7" class="box"/>
+  <text x="275" y="157" class="grn">EAGLE ANALYTICAL</text>
+  <text x="275" y="170" class="sub">Testing laboratory · Houston</text>
+  <text x="275" y="183" class="">President Ross Caputo</text>
+  <text x="275" y="196" class="">Since 2004; long branded</text>
+  <text x="275" y="209" class="">'a PCCA company'</text>
+  <rect x="510" y="140" width="225" height="92" rx="7" class="box"/>
+  <text x="520" y="157" class="grn">WILCREST PHARMA</text>
+  <text x="520" y="170" class="sub">503B outsourcing facility · Houston</text>
+  <text x="520" y="183" class="">CEO A.J. Day, PharmD</text>
+  <text x="520" y="196" class="">(formerly PCCA's clinical VP)</text>
+  <text x="520" y="209" class="">Formed 2024</text>
+  <rect x="755" y="140" width="225" height="92" rx="7" class="box"/>
+  <text x="765" y="157" class="grn">CURIVE HEALTHCARE</text>
+  <text x="765" y="170" class="sub">Consumer-products incubator</text>
+  <text x="765" y="183" class="">Co-founders Lisa Krady &amp;</text>
+  <text x="765" y="196" class="">Matthew Line (PCCA's CMO)</text>
+  <text x="765" y="209" class="">'Backed by PCCA' formulation R&amp;D</text>
+  <rect x="38" y="254" width="207" height="60" rx="7" class="box box-pk"/>
+  <text x="48" y="271" class="inv-h">PK SOFTWARE, INC.</text>
+  <text x="48" y="284" class="inv">Acquired by PCCA in 2010 from</text>
+  <text x="48" y="297" class="inv-s">founder Paul Klomp, RPh · Houston</text>
+  <path class="ln-c" d="M50,314 V362 H62"/>
+  <rect x="62" y="326" width="183" height="72" rx="7" class="box box-nest"/>
+  <text x="72" y="342" class="cop">PK OWNS THE PRODUCTS</text>
+  <text x="72" y="354" class="">The Compounder Rx (dispensing)</text>
+  <text x="72" y="366" class="">The Compounder Lab (lab &amp; QA)</text>
+  <text x="72" y="378" class="">e-Rx module · integrations</text>
+  <text x="72" y="390" class="sub">Its compounding install base</text>
+  <rect x="38" y="414" width="207" height="72" rx="7" class="box"/>
+  <text x="48" y="430" class="hb">INTERNATIONAL UNITS</text>
+  <text x="48" y="442" class="">PCCA Canada (London, ON)</text>
+  <text x="48" y="454" class="">PCCA Australia (Matraville, NSW)</text>
+  <text x="48" y="466" class="">PCCA UK / PCCA Healthcare</text>
+  <text x="48" y="478" class="sub">(Newcastle; CEO Emma Rooth, 2026)</text>
+  <rect x="38" y="500" width="207" height="58" rx="7" class="box"/>
+  <text x="48" y="517" class="hb">WELLNESS WORKS</text>
+  <text x="48" y="530" class="">Supplement &amp; vitamin line for</text>
+  <text x="48" y="543" class="">pharmacies</text>
+  <rect x="38" y="572" width="207" height="72" rx="7" class="box"/>
+  <text x="48" y="588" class="hb">INSTITUTE &amp; BASE IP</text>
+  <text x="48" y="600" class="">PCCA Institute (education arm),</text>
+  <text x="48" y="612" class="">formula database, exclusive bases:</text>
+  <text x="48" y="624" class="">Lipoderm, VersaBase, MucoLox,</text>
+  <text x="48" y="636" class="">PracaSil-Plus, SubMagna, ExoBlue</text>
+  <path class="ln" d="M28,232 V608 M28,284 H38 M28,450 H38 M28,529 H38 M28,608 H38"/>
+  <rect x="283" y="254" width="207" height="72" rx="7" class="box"/>
+  <text x="293" y="270" class="hb">TESTING SERVICES</text>
+  <text x="293" y="282" class="">FDA-registered, ISO 17025 lab</text>
+  <text x="293" y="294" class="">Potency, sterility, endotoxin, BUD</text>
+  <text x="293" y="306" class="">ACHC partner (Jun 2026); growing</text>
+  <text x="293" y="318" class="">into Canada, FL, AZ, Australia</text>
+  <path class="ln" d="M273,232 V290 M273,290 H283"/>
+  <rect x="528" y="254" width="207" height="72" rx="7" class="box"/>
+  <text x="538" y="270" class="hb">503B PRODUCTION</text>
+  <text x="538" y="282" class="">FDA-registered outsourcing facility</text>
+  <text x="538" y="294" class="">Hazardous &amp; oncology sterile and</text>
+  <text x="538" y="306" class="">non-sterile meds for hospitals</text>
+  <text x="538" y="318" class="">Premier GPO deal (Apr 1, 2026)</text>
+  <path class="ln" d="M518,232 V290 M518,290 H528"/>
+  <rect x="773" y="254" width="207" height="60" rx="7" class="box"/>
+  <text x="783" y="270" class="hb">PLUM (BRAND)</text>
+  <text x="783" y="282" class="">Intimate-care line: Plum Serum,</text>
+  <text x="783" y="294" class="">Cleansing + Hydrating Mist</text>
+  <text x="783" y="306" class="sub">Direct to consumer, no pharmacy</text>
+  <path class="ln" d="M763,232 V284 M763,284 H773"/>
+</svg>
+      <div class="org-legend"><span><i style="background:var(--green)"></i>Holding company</span><span><i style="background:rgba(180,98,47,.35); border:1px solid var(--copper)"></i>PCCA (the focus of this briefing)</span><span><i style="background:var(--copper)"></i>PK Software (PCCA subsidiary)</span><span><i style="background:var(--paper); border:1px solid rgba(29,26,21,.4)"></i>Other operating companies &amp; assets</span></div>
+      <p class="org-note">Drawn from how the companies describe themselves in 2025–26 releases; ownership percentages and exact legal nesting are not disclosed. Eagle was long branded "a PCCA company" and now appears alongside PCCA under the holding company; PCCA UK is described both as a PCCA unit and as held by Precision Health Holdings. Wellness Works appears as a PCCA product line/business unit.</p>
     </div>
 
     <div class="cards">
